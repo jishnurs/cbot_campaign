@@ -1,0 +1,11 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
+$config['protocol']='smtp';
+$config['smtp_host']='mail.medpicky.com';
+$config['smtp_port']='587';
+$config['smtp_timeout']='30';
+$config['smtp_user']='cbotlabs@medpicky.com';
+$config['smtp_pass']='IU,)d%k0p?0~';
+$config['charset']='utf-8';
+$config['newline']="\r\n";
+$config['wordwrap'] = TRUE;
+$config['mailtype'] = 'html';
