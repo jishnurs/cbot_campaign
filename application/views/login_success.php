@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <div class="container">
-	<div class="row">
-		<div class="col-md-12">
+	<!-- <div class="row">
+		<div class="col-md-6">
 			<div class="page-header">
 				<h1>Login success!</h1>
 			</div>
 			<p>You are now logged in.</p>
 		</div>
-	</div>
+	</div> -->
 	<?php 
 	if(!empty($status_message)){?>
 		<div class="row">
@@ -48,5 +48,37 @@
 				</div>
 			</form>
 		</div>
+		<div class="col-md-6"  style="height: 500px; overflow: scroll;cursor: pointer;">
+			<table class="responsive table">
+				<caption>Doctor Email Ids</caption>
+				<thead>
+					<tr>
+						<th>Email</th>
+					</tr>
+				</thead>
+				<tbody>
+				<?php 
+					if(!empty($doctorEmails)){
+						foreach ($doctorEmails as $key) {
+							echo "<tr><td>";
+							echo $key->email;
+							echo "</td></tr>";
+						}
+					}
+				 ?>
+					
+
+				</tbody>
+			</table>
+		</div>
 	</div>
-</div><!-- .container -->
+</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$('.table tr td').click(function(){
+			$('#toEmail').val($(this).text());
+		})
+	});
+</script>

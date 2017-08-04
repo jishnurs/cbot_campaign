@@ -47,9 +47,11 @@ class Home extends CI_Controller {
 	public function login() 
 	{
 		if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+				$data['doctorEmails'] = $this->UserModel->getDoctorEmails();
+
 			// user login ok
 			$this->load->view('header');
-			$this->load->view('login_success');
+			$this->load->view('login_success',$data);
 			$this->load->view('footer');
 		}else{
 
@@ -86,6 +88,7 @@ class Home extends CI_Controller {
 				$_SESSION['is_confirmed'] = (bool)$user->is_confirmed;
 				$_SESSION['is_admin']     = (bool)$user->is_admin;
 
+				$data['doctorEmails'] = $this->UserModel->getDoctorEmails();
 				// user login ok
 				$this->load->view('header');
 				$this->load->view('login_success', $data);
@@ -143,9 +146,9 @@ class Home extends CI_Controller {
 			// $email    = $this->input->post('email');
 			// $password = $this->input->post('password');
 
-			$username = 'jishnu2292';
-			$email    = 'jishnu2292@gmail.com';
-			$password = 11111;
+			$username = '';
+			$email    = '';
+			$password = '';
 			
 			if ($this->UserModel->create_user($username, $email, $password)) {
 				
@@ -175,12 +178,14 @@ class Home extends CI_Controller {
 		$this->form_validation->set_rules('mailTypeId', 'Mail type', 'required|numeric|trim');
 		$this->form_validation->set_rules('toEmail', 'To email', 'required|trim');
 		$this->form_validation->set_rules('subject', 'Subject', 'required|trim');
+		
+		$data['doctorEmails'] = $this->UserModel->getDoctorEmails();
 
 		if ($this->form_validation->run() == false) {
 
 			// validation not ok, send validation errors to the view
 			$this->load->view('header');
-			$this->load->view('login_success');
+			$this->load->view('login_success',$data);
 			$this->load->view('footer');
 
 		}else{
@@ -201,6 +206,11 @@ class Home extends CI_Controller {
 				'mail_type_id' => $mailTypeId, 
 				);
 			$status = $this->sendEmailToDoctors($emailContents,$emailFile);
+			// if($status){
+				$this->load->view('header');
+				$this->load->view('login_success',$data);
+				$this->load->view('footer');
+			// }
 		}
 	}
 
@@ -228,7 +238,7 @@ class Home extends CI_Controller {
 		// $this->email->initialize($config);
 
 
-        $this->email->from('cbotlabs@medpicky.com', 'CBOT Labs');
+        $this->email->from('cbotlabs@medpicky.com', 'Medpicky');
 		$this->email->to($toEmail);
 
 		$this->email->subject($subject);
@@ -246,9 +256,7 @@ class Home extends CI_Controller {
 		}
 		$status = $this->UserModel->addWebsiteOfferEmailStatus($emailContents);
 		if($status){
-			$this->load->view('header');
-			$this->load->view('login_success',$data);
-			$this->load->view('footer');
+			return true;
 		}
 	}
 

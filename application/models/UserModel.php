@@ -125,5 +125,18 @@ class UserModel extends CI_Model {
 		}
 		return false;
 	}
+
+	public function getDoctorEmails()
+	{
+		$this->db->select('email');
+		$this->db->from('doctors');
+		$query = $this->db->get();
+
+		if($query->num_rows() > 0){
+			return $query->result();
+		}else{
+			return false;
+		}
+	}
 	
 }
