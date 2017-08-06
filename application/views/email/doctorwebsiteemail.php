@@ -283,7 +283,9 @@
                                     <tr>
                                       <td width="21" class="em_hide">&nbsp;</td>
                                       <td align="center" valign="top">
-                                        <img src="http://cbotlabs.com/offer_image.jpg" width="100%" height="auto" alt="" border="0" style="display:block;"/></td>
+                                        <!-- <img src="http://cbotlabs.com/offer_image.jpg" width="100%" height="auto" alt="" border="0" style="display:block;"/> -->
+                                        <img src="http://cbotlabs.medpicky.com/assets/offer.jpg" width="100%" height="auto" alt="" border="0" style="display:block;"/>
+                                        </td>
                                         <td width="21" class="em_hide">&nbsp;</td>
                                       </tr>
                                     </table>
@@ -319,7 +321,7 @@
                             <img src="star1.jpg" width="110" height="17" alt="" border="0" style="display:block;"/></td>
                           </tr>
                           <tr>
-                            <td align="center" class="em_gray" style="padding-bottom:15px; font-family:'Lato', Arial, sans-serif; font-size:17px; line-height:26px; color:#888b8d; font-style:italic;">Embark on new adventures and take an audacious 66% off for your premium website. But don't get delay, this intrepid deal departs after midnight on<br> Sunday 6th August, 2017.</td>
+                            <td align="center" class="em_gray" style="padding-bottom:15px; font-family:'Lato', Arial, sans-serif; font-size:17px; line-height:26px; color:#888b8d; font-style:italic;">Embark on new adventures and take an audacious 66% off for your premium website. But don't get delay, this intrepid deal departs after midnight on<br><span style="color:rgb(192, 46, 46);"> Wednesday 9<sup>th</sup> August, 2017.</span></td>
                           </tr>
                           
                         </table>

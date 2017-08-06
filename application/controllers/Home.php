@@ -293,7 +293,7 @@ class Home extends CI_Controller {
 	}
 
 
-	public function showDoctorEmail()
+	public function viewDoctorEmail()
 	{
 		$this->load->view('email/doctorwebsiteemail');
 	}
