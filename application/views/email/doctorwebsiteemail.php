@@ -344,11 +344,11 @@
                          
                             <tr>
                               <td align="center" valign="middle" class="em_wht" bgcolor="#4285f4" style="font-size: 13px; font-family:'Lato', Arial, sans-serif; color: #ffffff;background-color: #28bdc0; border-radius:2px;padding: 10px">
-                                <a href="" target="_blank" style="color: #ffffff !important; text-decoration: none !important; display: block;font-weight: 800;">BOOK NOW</a>
+                                <a href="https://www.medpicky.com/contact-us" target="_blank" style="color: #ffffff !important; text-decoration: none !important; display: block;font-weight: 800;">BOOK NOW</a>
                               </td>
                               <td align="center" valign="middle" style="padding:10px 20px; font-size: 17px; font-family:'Lato', Arial, sans-serif; color: #888b8d;"> Or </td>
                               <td align="center" valign="middle" class="em_wht" bgcolor="#4285f4" style="font-size: 13px; font-family:'Lato', Arial, sans-serif; color: #ffffff;background-color: #28bdc0; border-radius:2px;">
-                                <a href="#" target="_blank" style="color: #ffffff !important; text-decoration: none !important; display: block;font-weight: 800">REQUEST CALLBACK</a>
+                                <a href="https://www.medpicky.com/contact-us" target="_blank" style="color: #ffffff !important; text-decoration: none !important; display: block;font-weight: 800">REQUEST CALLBACK</a>
                               </td>
                             </tr>
                        

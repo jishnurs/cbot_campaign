@@ -56,7 +56,7 @@ class Home extends CI_Controller {
 		}else{
 
 		// create the data object
-		$data = new stdClass();
+		// $data = new stdClass();
 
 
 		// set validation rules
@@ -290,5 +290,11 @@ class Home extends CI_Controller {
 
 		}
 
+	}
+
+
+	public function showDoctorEmail()
+	{
+		$this->load->view('email/doctorwebsiteemail');
 	}
 }

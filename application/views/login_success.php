@@ -39,7 +39,7 @@
 					<datalist id="subject">
 						<option value="Low cost Premium website from Team Medpicky">
 						<option value="User Website Offer">
-						<option value="2nd-anniversary big offer, Doctors Premium website for Rs 4999/- only Hurry!">
+						<option value="2<sup>nd</sup> - Anniversary big offer, Doctors Premium website for Rs 4999/- only Hurry!">
 					</datalist>
 				</div>
 				
