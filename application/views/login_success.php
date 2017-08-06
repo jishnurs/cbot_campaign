@@ -35,7 +35,7 @@
 				</div>
 				<div class="form-group">
 					<label for="subject">Subject</label>
-					<input type="text" class="form-control" list="subject" name="subject" placeholder="Subject" value="2nd-anniversary big offer, Doctors Premium website for Rs 4999/- only Hurry!" autocomplete="off">
+					<input type="text" class="form-control" list="subject" name="subject" placeholder="Subject" value="2nd - Anniversary big offer, Doctors Premium website for Rs 4999/- only Hurry!" autocomplete="off">
 					<datalist id="subject">
 						<option value="Low cost Premium website from Team Medpicky">
 						<option value="User Website Offer">
