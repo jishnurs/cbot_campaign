@@ -71,6 +71,7 @@
 				</tbody>
 			</table>
 		</div>
+		<a href="whatsapp://send?text=http://cbotlabs.medpicky.com/home/viewDoctorEmail" data-action="share/whatsapp/share">Share via Whatsapp</a>
 	</div>
 </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
